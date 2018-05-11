@@ -1,0 +1,106 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-03-01
+ * Description：about
+ */
+@import "../../libs/scss/rem";
+
+.download {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: rem(640);
+    background: url("../img/register-bg.jpg") top center #141330 no-repeat;
+    background-size: 100% 100%;
+
+    .download-cont {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        .down-icon {
+            position: absolute;
+            left: rem(190);
+            top: rem(255);
+
+            img {
+                width: rem(260);
+                height: rem(260);
+            }
+
+            h6 {
+                font-size: rem(38);
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        .down-decorate1 {
+            position: absolute;
+            left: rem(85);
+            top: rem(260);
+
+            img {
+                width: rem(108);
+                height: rem(95);
+            }
+        }
+
+        .down-decorate2 {
+            position: absolute;
+            right: rem(120);
+            top: rem(400);
+
+            img {
+                width: rem(73);
+                height: rem(58);
+            }
+        }
+
+        .down-describe {
+            position: absolute;
+            text-align: center;
+            width: rem(420);
+            font-size: rem(28);
+            color: #bfbcf7;
+            left: rem(110);
+            top: rem(615);
+            line-height: rem(40);
+        }
+
+        .down-btn {
+            position: absolute;
+            left: rem(102);
+            top: rem(730);
+            width: rem(435);
+            height: rem(80);
+            border-radius: rem(50) rem(50);
+            background: #9f3765;
+            font-size: rem(34);
+            text-align: center;
+            line-height: rem(80);
+            color: #fff;
+        }
+    }
+
+    .Android-hint {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        display: none;
+
+        img {
+            position: absolute;
+            width: rem(510);
+            height: rem(591);
+            top: rem(150);
+            left: rem(65);
+        }
+    }
+}

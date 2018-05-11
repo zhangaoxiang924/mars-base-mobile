@@ -1,0 +1,28 @@
+<%- include('../../libs/html/util-m/header', {
+title: '邀请好友领取蓝钻',
+description: '火星基地',
+keywords: '火星基地',
+plugin: [''],
+private: ['../css/public.css', '../css/command.css']
+}) %>
+
+<div class="command">
+    <div class="command-cont">
+        <div class="cont-top">
+            <p><img src="../img/invitation-ewm.png" alt=""></p>
+            <p class="text">扫描二维码下载火星基地APP</p>
+        </div>
+        <div class="cont-x"></div>
+        <div class="cont-bottom">
+            <p class="command-text">口令：我是<span id="userName"></span>，邀请你跟我一起去火星基地挖钻！</p>
+            <textarea id="commandText" readonly="readonly"></textarea>
+            <button class="command-btn" data-clipboard-action="copy" data-clipboard-target="#commandText">复制口令</button>
+            <p class="command-introduce">复制口令粘贴到微信群或朋友圈，每成功（通过你的口令链接下载并登录火星基地APP）邀请一人，你就能获得5个探力和1个蓝钻，被邀请的人也可获得5个蓝钻！</p>
+        </div>
+    </div>
+</div>
+<%- include('../../libs/html/util-m/footer', {
+plugin: [''],
+private: ['../js/command.js', '//static.mars-station.hellozhibo.com/assets/layer.js', '//cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js'],
+statistics: ''
+}) %>

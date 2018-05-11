@@ -1,0 +1,210 @@
+/**
+ * Author：tantingting
+ * Time：2018/4/11
+ * Description：Description
+ */
+@import "../../libs/scss/rem";
+
+.mall {
+    background-color: #f86254;
+
+    .mail-contain {
+        //margin-top: rem(26);
+        height: rem(2512);
+        background: url("../img/mail-bg.jpg") no-repeat;
+        background-size: cover;
+        padding-left: rem(16);
+        padding-top: rem(26);
+        position: relative;
+
+        .mall-title {
+            width: rem(334);
+            height: rem(58);
+            margin: 0 auto rem(26);
+            display: block;
+        }
+
+        & > div.mail-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            .list-box {
+                width: rem(292);
+                height: rem(308);
+                background-color: #fff;
+                box-shadow: 1px 1px 8px #8a7575;
+                border-radius: 5px;
+                margin-bottom: rem(18);
+                margin-right: rem(16);
+                position: relative;
+
+                img {
+                    width: rem(88);
+                    height: rem(156);
+                    margin: rem(40) auto rem(46);
+                    display: block;
+                }
+
+                &:nth-of-type(2) {
+                    img {
+                        width: rem(96);
+                        height: rem(141);
+                        margin: rem(40) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    img {
+                        width: rem(184);
+                        height: rem(121);
+                        margin: rem(64) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    img {
+                        width: rem(124);
+                        height: rem(157);
+                        margin: rem(40) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(5) {
+                    img {
+                        width: rem(137);
+                        height: rem(137);
+                        margin: rem(58) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(6) {
+                    img {
+                        width: rem(148);
+                        height: rem(154);
+                        margin: rem(54) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(7) {
+                    img {
+                        width: rem(143);
+                        height: rem(153);
+                        margin: rem(48) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(8) {
+                    img {
+                        width: rem(127);
+                        height: rem(150);
+                        margin: rem(66) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(9) {
+                    img {
+                        width: rem(102);
+                        height: rem(155);
+                        margin: rem(54) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(10) {
+                    img {
+                        width: rem(116);
+                        height: rem(154);
+                        margin: rem(68) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(11) {
+                    img {
+                        width: rem(158);
+                        height: rem(99);
+                        margin: rem(88) auto rem(46);
+                    }
+                }
+
+                &:nth-of-type(12) {
+                    img {
+                        width: rem(119);
+                        height: rem(146);
+                        margin: rem(38) auto rem(46);
+                    }
+                }
+
+                .mall-info {
+                    position: absolute;
+                    bottom: rem(26);
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    &:after {
+                        content: '';
+                        height: 0;
+                        width: 0;
+                        clear: both;
+                        visibility: hidden;
+                        display: block;
+                    }
+                }
+
+                span {
+                    font-size: rem(20.48);
+                    color: #9a9a9a;
+                    float: left;
+                    margin-left: rem(16);
+                    line-height: rem(32);
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                a {
+                    font-size: rem(17);
+                    color: #444;
+                    display: inline-block;
+                    vertical-align: middle;
+                    border: 1px solid #e0e0e0;
+                    padding: rem(5) rem(10);
+                    border-radius: rem(6);
+                    white-space: nowrap;
+                    max-width: rem(152);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    //float: right;
+                    //margin-right: rem(8);
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .mall-footer {
+            color: #fff;
+            text-align: center;
+            margin-left: rem(40);
+            margin-right: rem(56);
+            position: absolute;
+            bottom: rem(54);
+
+            .f-title {
+                width: rem(208);
+                height: rem(54);
+                margin-bottom: rem(28);
+            }
+
+            p {
+                font-size: rem(23.89);
+                opacity: 0.6;
+                line-height: rem(30);
+            }
+
+            .last {
+                margin-top: rem(56);
+                font-size: rem(20.48);
+                opacity: 0.4;
+            }
+        }
+    }
+}

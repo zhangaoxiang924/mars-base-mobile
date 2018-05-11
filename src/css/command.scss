@@ -1,0 +1,102 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-03-01
+ * Description：about
+ */
+@import "../../libs/scss/rem";
+
+.command {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url("../img/register-bg.jpg") center no-repeat;
+    background-size: 100% 100%;
+
+    .command-cont {
+        width: rem(526);
+        height: auto;
+        margin: rem(60) 0 0 rem(57);
+        border-radius: rem(10);
+
+        .cont-top {
+            width: 100%;
+            height: rem(290);
+            background: #fff;
+            padding-top: rem(50);
+            border-top-left-radius: rem(10);
+            border-top-right-radius: rem(10);
+
+            p {
+                width: 100%;
+                text-align: center;
+
+                img {
+                    width: rem(225);
+                    height: rem(225);
+                }
+
+                &.text {
+                    font-size: rem(26);
+                    color: #686868;
+                    line-height: rem(60);
+                    padding-bottom: rem(5);
+                }
+            }
+        }
+
+        .cont-x {
+            width: rem(526);
+            height: rem(41);
+            background: url("../img/x-x.png") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .cont-bottom {
+            background: #fff;
+            padding-top: rem(15);
+            border-bottom-left-radius: rem(10);
+            border-bottom-right-radius: rem(10);
+
+            #commandText {
+                height: 0;
+                border: rem(1) #fff solid;
+            }
+
+            p {
+                &.command-text {
+                    width: rem(400);
+                    margin: 0 auto;
+                    line-height: rem(40);
+                    color: #613654;
+                    font-size: rem(30);
+                }
+
+                &.command-introduce {
+                    width: rem(430);
+                    font-size: rem(22);
+                    color: #686868;
+                    line-height: rem(30);
+                    margin: 0 auto;
+                    padding-bottom: rem(50);
+                }
+            }
+
+            .command-btn {
+                display: block;
+                width: rem(200);
+                height: rem(60);
+                line-height: rem(60);
+                font-size: rem(30);
+                color: #fff;
+                background: #964084;
+                border-radius: rem(50) rem(50);
+                margin: rem(10) auto rem(30);
+                text-align: center;
+                border: none;
+            }
+        }
+    }
+}

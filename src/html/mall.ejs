@@ -1,0 +1,60 @@
+<%- include('../../libs/html/util-m/header', {
+title: '蓝钻商城',
+description: '火星基地',
+keywords: '火星基地',
+plugin: [''],
+private: ['../css/public.css', '../css/mall.css']
+}) %>
+
+<div class="mall">
+    <div class="mail-contain">
+        <img class="mall-title" src="../img/mall-title.png">
+        <div class="mail-list">
+            <% var list = [
+                {imgUrl: '../img/mall-img1.png', num: 400},
+                {imgUrl: '../img/mall-img2.png', num: 200},
+                {imgUrl: '../img/mall-img3.png', num: 500},
+                {imgUrl: '../img/mall-img4.png', num: 500},
+                {imgUrl: '../img/mall-img5.png', num: 400},
+                {imgUrl: '../img/mall-img6.png', num: 200},
+                {imgUrl: '../img/mall-img7.png', num: 500},
+                {imgUrl: '../img/mall-img8.png', num: 500},
+                {imgUrl: '../img/mall-img9.png', num: 400},
+                {imgUrl: '../img/mall-img10.png', num: 200},
+                {imgUrl: '../img/mall-img11.png', num: 500},
+                {imgUrl: '../img/mall-img12.png', num: 500}
+            ]
+            list.map(function (item) {
+            %>
+            <div class="list-box">
+                <img src="<%= item.imgUrl %>" />
+                <div class="mall-info">
+                    <!--<span>蓝钻：<%= item.num %></span>-->
+                    <a href="javascript:void(0)">兑换通道即将开启</a>
+                </div>
+            </div>
+            <%
+            })
+            %>
+            <!--<div class="list-box">
+                <img src="../img/mall-img1.png" />
+                <div class="mall-info">
+                    <span>蓝钻：400</span>
+                    <a href="javascript:void(0)">兑换通道即将开启</a>
+                </div>
+            </div>-->
+        </div>
+        <div class="mall-footer">
+            <img class="f-title" src="../img/mall-yuan.png">
+            <p>
+                蓝钻商城是火星基地用户消费的地方，用户可以用挖到的蓝钻在商城兑换商品，火星官网将不定期开放商品兑换通道，更多可兑换商品敬请期待！
+            </p>
+            <p class="last">一切解释权归火星基地官方所有</p>
+        </div>
+    </div>
+</div>
+<%- include('../../libs/html/util-m/footer', {
+plugin: [''],
+private: ['../js/mall.js', '//static.mars-station.hellozhibo.com/assets/layer.js'],
+statistics: ''
+}) %>

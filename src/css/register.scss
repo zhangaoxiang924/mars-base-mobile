@@ -1,0 +1,197 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-03-01
+ * Description：about
+ */
+@import "../../libs/scss/rem";
+
+.register {
+    height: rem(1029);
+    min-height: 100%;
+    background: url("../img/register-bg.jpg") top center no-repeat;
+    background-size: 100% 100%;
+
+    .register-cont {
+        padding-top: rem(30);
+
+        .decorate1 {
+            position: absolute;
+            top: rem(-260);
+            left: rem(100);
+
+            img {
+                width: rem(276);
+                height: rem(275);
+            }
+        }
+
+        .decorate2 {
+            position: absolute;
+            top: rem(-310);
+            left: rem(300);
+
+            img {
+                width: rem(100);
+                height: rem(48);
+            }
+        }
+
+        .app {
+            color: #fff;
+            font-size: rem(20.47);
+            opacity: 0.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: rem(98);
+                height: rem(98);
+                border-radius: rem(15);
+                margin-bottom: rem(8);
+            }
+        }
+
+        & > img {
+            width: rem(468);
+            height: rem(221);
+            margin: rem(48) auto rem(130);
+            display: block;
+        }
+
+        .register-form {
+            width: rem(554);
+            margin: 0 auto;
+
+            p {
+                position: relative;
+                padding: rem(15) 0;
+                z-index: 10;
+                box-sizing: border-box;
+
+                input {
+                    height: rem(80);
+                    line-height: rem(80);
+                    font-size: rem(32);
+                    color: #656565;
+                    border: none;
+                    border-radius: rem(45);
+                    padding: 0 rem(35);
+                }
+
+                #phonenum {
+                    width: rem(450);
+                    margin-left: rem(16);
+                }
+
+                #verifcode {
+                    width: rem(240);
+                    margin-left: rem(16);
+                }
+
+                #btnCode {
+                    float: right;
+                    width: rem(200);
+                    height: rem(80);
+                    text-align: center;
+                    background: #fff;
+                    border: none;
+                    border-radius: rem(45);
+                    color: #333;
+                    font-size: rem(27.3);
+                    margin-right: rem(20);
+                }
+
+                &.register-submit {
+                    #register-submit {
+                        width: 100%;
+                        height: rem(119);
+                        background: url("../img/register-btn.png");
+                        background-size: cover;
+                        color: #6f3314;
+                        font-size: rem(40.95);
+                        display: block;
+                        text-align: center;
+                        padding-top: rem(28);
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+
+    .register-succeed {
+        padding-top: rem(113);
+
+        .succeed-bg {
+            margin-left: rem(82);
+            width: rem(470);
+            height: rem(471);
+            background: url("../img/register-success-bg2.png") no-repeat;
+            background-size: 100%;
+            text-align: center;
+
+            img {
+                width: rem(449);
+                height: rem(241);
+                margin-top: rem(40);
+            }
+
+            h6 {
+                background: url("../img/register-text-bg2.png") no-repeat;
+                background-size: 100%;
+                width: rem(395);
+                height: rem(81);
+                margin-top: rem(12);
+                margin-left: rem(50);
+                font-size: rem(21.35);
+                color: #ea3374;
+            }
+        }
+
+        .decorate1 {
+            position: absolute;
+            top: rem(-70);
+            left: rem(100);
+
+            img {
+                width: rem(276);
+                height: rem(275);
+            }
+        }
+
+        .down-load {
+            width: rem(554);
+            height: rem(119);
+            text-align: center;
+            font-size: rem(40.95);
+            color: #6f3314;
+            background: url("../img/register-btn.png") no-repeat;
+            background-size: 100%;
+            display: block;
+            box-sizing: border-box;
+            padding-top: rem(28);
+            margin: rem(135) auto 0;
+        }
+    }
+
+    .Android-hint {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        display: none;
+
+        img {
+            position: absolute;
+            width: rem(510);
+            height: rem(591);
+            top: rem(150);
+            left: rem(65);
+        }
+    }
+}

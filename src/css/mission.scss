@@ -1,0 +1,266 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-03-01
+ * Description：about
+ */
+@import "../../libs/scss/rem";
+
+.mission {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: rem(640);
+    height: auto;
+    background: #f2f5f7;
+
+    .mission-banner {
+        width: 100%;
+        height: rem(154);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .mission-title1 {
+        color: #663960;
+        font-size: rem(30);
+        height: rem(75);
+        line-height: rem(75);
+        padding: 0 rem(30);
+    }
+
+    .mission-list {
+        width: 100%;
+        height: auto;
+
+        li {
+            position: relative;
+            padding: 0 rem(30);
+            height: rem(80);
+            background: #fff;
+            line-height: rem(80);
+            margin-bottom: rem(10);
+
+            a {
+                color: #000;
+            }
+
+            &.not-enabled {
+                color: #6f6f6f !important;
+
+                span,
+                a {
+                    color: #6f6f6f !important;
+                }
+
+                font {
+                    img {
+                        //filter: grayscale(0%);
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .task-text {
+                font-size: rem(26);
+                margin-left: rem(40);
+
+                font {
+                    position: absolute;
+                    left: rem(30);
+                    top: rem(15);
+
+                    img {
+                        width: rem(31);
+                        height: rem(45);
+                    }
+                }
+
+                span {
+                    font-size: rem(26);
+                    color: #94bc18;
+                    margin-left: rem(15);
+
+                    &.unfinished {
+                        display: none;
+                    }
+                }
+            }
+
+            .accomplish-state {
+                position: absolute;
+                right: rem(90);
+                top: 0;
+                text-align: right;
+
+                span {
+                    display: block;
+                    float: left;
+                    font-size: rem(26);
+                    color: #772e68;
+
+                    &.unfinished {
+                        color: #2386f6;
+                    }
+                }
+
+                font {
+                    position: absolute;
+                    right: rem(-60);
+                    top: rem(18);
+                    width: rem(42);
+                    height: rem(42);
+                    background: url("../img/accomplish.png") no-repeat;
+                    background-size: 100%;
+
+                    &.unfinished {
+                        top: rem(25);
+                        right: rem(-55);
+                        width: rem(16);
+                        height: rem(27);
+                        background: url("../img/right-arrows-o.png") no-repeat;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .mission-column {
+        width: 100%;
+        background: #fff;
+        height: rem(207);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .column-list {
+            position: relative;
+            height: rem(207);
+            width: 33.3333%;
+            box-sizing: border-box;
+
+            &.not-enabled {
+                img {
+                    filter: grayscale(100%);
+                    opacity: 0.6;
+                }
+
+                h6 {
+                    color: #888;
+                }
+
+                p {
+                    &.describe {
+                        color: #888;
+                    }
+                }
+            }
+
+            &.finish {
+                p {
+                    &.describe {
+                        color: #888;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                border-left: rem(1) solid #d7d7d7;
+                border-right: rem(1) solid #d7d7d7;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: #000;
+            }
+
+            span {
+                &.hot {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: rem(90);
+                    height: rem(90);
+                    display: none;
+
+                    img {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: rem(90);
+                        height: rem(90);
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+
+            &.list1,
+            &.list2,
+            &.list3 {
+                font {
+                    position: absolute;
+                    top: rem(25);
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                img {
+                    width: rem(70);
+                    height: rem(82);
+                }
+            }
+
+            /* &.list1 {
+                .describe {
+                    color: #888;
+                }
+            } */
+
+            /* &.list2 {
+                .describe {
+                    color: #df8a1b;
+                }
+            }
+
+            &.list3 {
+                .describe {
+                    color: #94bc18;
+                }
+            } */
+
+            h6 {
+                width: 100%;
+                position: absolute;
+                font-size: rem(24.74);
+                text-align: center;
+                bottom: rem(50);
+                color: #251c3e;
+            }
+
+            .describe {
+                color: #df8a1b;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: rem(15);
+                font-size: rem(20.62);
+
+                &.finish {
+                    color: #94bc18;
+                }
+            }
+        }
+    }
+}

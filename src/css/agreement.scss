@@ -1,0 +1,92 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-03-01
+ * Description：about
+ */
+@import "../../libs/scss/rem";
+
+.agreement {
+    padding: rem(20) rem(20) rem(80);
+
+    h6 {
+        font-size: rem(36);
+        color: #000;
+        line-height: rem(60);
+        text-align: center;
+        margin-bottom: rem(10);
+    }
+
+    p {
+        font-size: rem(28);
+        color: #000;
+        padding: 0 rem(20);
+        line-height: rem(36);
+        margin-bottom: rem(15);
+        text-align: justify;
+        text-indent: 2em;
+    }
+}
+
+.strategy {
+    width: rem(640);
+    height: auto;
+    background: url("../img/strategy-bg.jpg") #080e39 top no-repeat;
+    background-size: 100%;
+    padding: rem(235) 0 rem(100);
+
+    .strategy-list {
+        position: relative;
+        width: rem(400);
+        padding: rem(60) rem(35) rem(40);
+        background: #272558;
+        margin-left: rem(115);
+        margin-bottom: rem(100);
+
+        h6 {
+            font-size: rem(32);
+            color: #c5d4ff;
+            font-weight: bold;
+            border-bottom: rem(1) #fff solid;
+            padding-bottom: rem(20);
+            margin-bottom: rem(20);
+        }
+
+        p {
+            color: #fff;
+            font-size: rem(26);
+            line-height: rem(35);
+            text-align: justify;
+        }
+
+        img {
+            position: absolute;
+            top: rem(-70);
+            left: rem(-60);
+            width: rem(110);
+        }
+
+        &.list1 {
+            img {
+                height: rem(128);
+            }
+        }
+
+        &.list2 {
+            img {
+                height: rem(135);
+            }
+        }
+
+        &.list3 {
+            img {
+                height: rem(123);
+            }
+        }
+
+        &.list4 {
+            img {
+                height: rem(136);
+            }
+        }
+    }
+}

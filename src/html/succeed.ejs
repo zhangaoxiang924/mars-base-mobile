@@ -1,0 +1,24 @@
+<%- include('../../libs/html/util-m/header', {
+title: '蓝钻领取成功',
+description: '火星基地',
+keywords: '火星基地',
+plugin: [''],
+private: ['../css/public.css', '../css/register.css']
+}) %>
+
+<div class="register">
+    <div class="register-succeed">
+        <div class="succeed-bg">
+            <img src="../img/register-success-title.png">
+            <!--<h6>下载火星基地APP查看我的蓝钻</h6>-->
+            <h6></h6>
+        </div>
+        <a class="down-load" id="downLoad">下载APP</a>
+    </div>
+    <div class="Android-hint"><img src="../img/and-hint.png" alt=""></div>
+</div>
+<%- include('../../libs/html/util-m/footer', {
+plugin: [''],
+private: ['../js/register.js', '//static.mars-station.hellozhibo.com/assets/layer.js'],
+statistics: ''
+}) %>
